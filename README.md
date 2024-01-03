@@ -1,5 +1,8 @@
 # How to start your AstroJS project
 
+Detailed instruction: 
+- Russian (русский язык) - https://habr.com/ru/articles/754878/
+
 STEP 1.
 
 Install AstroJS: [instruction](https://docs.astro.build/en/install/auto/)
