@@ -5,7 +5,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "editorconfig": "editorconfig-checker",
+    "editorconfig": "editorconfig-checker -exclude \"**/node_modules/**\"",
     "check": "astro check",
     "lintjs": "eslint . --fix",
     "lintcss": "stylelint \"src/**/*.{css,astro}\" --fix",
