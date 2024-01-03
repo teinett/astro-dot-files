@@ -1,0 +1,14 @@
+{
+	"scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "editorconfig": "editorconfig-checker",
+    "check": "astro check",
+    "lintjs": "eslint . --fix",
+    "lintcss": "stylelint \"src/**/*.{css,astro}\" --fix",
+    "test": "npm run editorconfig && npm run lintcss && npm run lintjs && npm run check",
+  },
+}
