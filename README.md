@@ -1,13 +1,13 @@
 # How to start your AstroJS project
 
-Detailed instruction: 
+**Detailed instruction**: 
 - Russian (русский язык) - https://habr.com/ru/articles/754878/
 
-STEP 1.
+### STEP 1.
 
 Install AstroJS: [instruction](https://docs.astro.build/en/install/auto/)
 
-STEP 2.
+### STEP 2.
 
 Add packages to help make your developing project better:
 - editorconfig
@@ -43,11 +43,11 @@ export default defineConfig({
 
 ```
 
-STEP 3.
+### STEP 3.
 
 Add scripts to your `package.json`: copy it from file `package-scripts.json` in this repository.
 
-STEP 4. 
+### STEP 4. 
 
 Copy dot files from this repository to your AstroJS project:
 
@@ -57,6 +57,6 @@ git clone https://github.com/teinett/astro-dot-files.git
 
 Now move all file, accept `package-scripts.json` and `.vscode` folder to the root of your project.
 
-STEP 4.
+### STEP 4.
 
 Using VSCode editor? Move all file from copied `.vscode` folder for your local `.vscode` folder. 
