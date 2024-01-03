@@ -24,7 +24,7 @@ npm install --save-dev editorconfig-checker prettier prettier-plugin-astro eslin
 
 Add `astro-compress` to file `astro.config.mjs`:
 
-````
+```
 import { defineConfig } from "astro/config";
 import Compress from "astro-compress";
 
@@ -40,7 +40,6 @@ export default defineConfig({
         }), // should be last in the list
     ],
 });
-
 ```
 
 ### STEP 3.
