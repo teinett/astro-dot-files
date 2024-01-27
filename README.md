@@ -61,4 +61,33 @@ Now move all file, accept `package-scripts.json` and `.vscode` folder to the roo
 
 ### STEP 4.
 
-Using VSCode editor? Move all file from copied `.vscode` folder for your local `.vscode` folder. 
+Using VSCode editor? 
+
+Move all file from copied `.vscode` folder for your local `.vscode` folder. 
+
+### STEP 5.
+
+Using TypeScript?
+
+Edit file `tsconfig.json`: add aliases
+
+```
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
+
+```
+
+### STEP 6.
+
+Using Astro Dev Toolbar?
+
+Recommended apps (check [full list](https://astro.build/integrations/?search=&categories%5B%5D=toolbar)):
+
+- [astro-meta-tags](https://github.com/patrick91/astro-meta-tags)
