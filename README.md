@@ -33,7 +33,7 @@ import Compress from "astro-compress";
 export default defineConfig({
     prefetch: true,
     integrations: [
-        markdoc(),
+        // ...
         Compress({
             // CSS: false,
             // HTML: false,
