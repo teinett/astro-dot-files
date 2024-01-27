@@ -22,6 +22,8 @@ Add packages to help make your developing project better:
 npm install --save-dev editorconfig-checker prettier prettier-plugin-astro eslint eslint-plugin-astro eslint-plugin-jsx-a11y @typescript-eslint/parser @typescript-eslint/eslint-plugin stylelint stylelint-config-html stylelint-config-standard postcss-html stylelint-order autoprefixer postcss-preset-env cssnano astro-compress
 ```
 
+Add `prefetch: true,` for faster page loading.
+
 Add `astro-compress` to file `astro.config.mjs`:
 
 ```
@@ -29,6 +31,7 @@ import { defineConfig } from "astro/config";
 import Compress from "astro-compress";
 
 export default defineConfig({
+    prefetch: true,
     integrations: [
         markdoc(),
         Compress({
