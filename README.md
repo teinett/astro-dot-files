@@ -24,17 +24,14 @@ npm install --save-dev editorconfig-checker prettier prettier-plugin-astro eslin
 
 ### STEP 3.
 
-Add scripts to your `package.json`: copy it from file `package-scripts.json` in this repository.
+Add scripts to your `package.json`: copy it from the file package-scripts.json in this repository.
 
-### STEP 4. 
+### STEP 4.
 
 Copy dot files from this repository to your AstroJS project:
+```git clone https://github.com/teinett/astro-dot-files.git```
 
-```
-git clone https://github.com/teinett/astro-dot-files.git
-```
-
-Now move all file, accept `package-scripts.json` and `.vscode` folder to the root of your project.
+Now move all files, excepting `package-scripts.json` and `.vscode` folder, to the root of your project.
 
 ### STEP 5.
 
@@ -46,12 +43,12 @@ Add integrations and helpful settings to file `astro.config.mjs`.
 
 - Add sitemap integration: `npm i @astrojs/sitemap`.
 
-- Add environment variables from `.env` file.
+- Add environment variables from the `.env` file.
 
 - Change CSS specify strategy. Options: 'where' | 'class' | 'attribute'. I prefer 'class'.
 
 
-Resulted file `astro.config.mjs`
+As a result, we get the file `astro.config.mjs`
 
 ```
 import { defineConfig } from "astro/config";
@@ -85,13 +82,13 @@ export default defineConfig({
 
 ### STEP 6.
 
-Using VSCode editor? 
+Use VSCode editor? 
 
-Move all file from copied `.vscode` folder for your local `.vscode` folder. 
+Move all files from the copied `.vscode` folder to your local `.vscode` folder. 
 
 ### STEP 7.
 
-Using TypeScript?
+Use TypeScript?
 
 Edit file `tsconfig.json`: add aliases
 
@@ -110,7 +107,7 @@ Edit file `tsconfig.json`: add aliases
 
 ### STEP 8.
 
-Using Astro Dev Toolbar?
+Use Astro Dev Toolbar?
 
 Move file `.astro/settings.json` to root: it's Dev Toolbar settings.
 
