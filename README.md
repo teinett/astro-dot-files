@@ -39,7 +39,7 @@ Add integrations and helpful settings to file `astro.config.mjs`.
 
 - Add line `prefetch: true,` for faster page loading.
 
-- Add `astro-compress` to compress files: `npm i astro-compress`.
+- Add `@playform/compress` to compress files: `npm i @playform/compress`.
 
 - Add sitemap integration: `npm i @astrojs/sitemap`.
 
@@ -53,7 +53,7 @@ As a result, we get the file `astro.config.mjs`
 ```
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
-import Compress from "astro-compress";
+import Compress from "@playform/compress";
 
 import { loadEnv } from "vite";
 const { FRONTEND_DOMAIN } = loadEnv(import.meta.env.MODE, process.cwd(), "");
