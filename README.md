@@ -55,6 +55,7 @@ As a result, we get the file `astro.config.mjs`
 ```
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
+import purgecss from "astro-purgecss";
 import Compress from "@playform/compress";
 
 import { loadEnv } from "vite";
