@@ -41,6 +41,8 @@ Add integrations and helpful settings to file `astro.config.mjs`.
 
 - Add `@playform/compress` to compress files: `npm i @playform/compress`.
 
+- Add `astro-purgecss` to purge unused styles: `npx astro add astro-purgecss`
+
 - Add sitemap integration: `npm i @astrojs/sitemap`.
 
 - Add environment variables from the `.env` file.
@@ -66,6 +68,22 @@ export default defineConfig({
     scopedStyleStrategy: "class",
     integrations: [
         sitemap(),
+        purgecss({
+            variables: true,
+
+            // for Astro view transitions
+            keyframes: false,
+
+            // for Astro view transitions
+            safelist: {
+                greedy: [
+                    /*astro*/
+                ],
+            },
+
+            // for SSR
+            content: [process.cwd() + "/src/**/*.{astro,jsx,tsx,css}"],
+        }),
         Compress({
             // CSS: false,
             // HTML: false,
