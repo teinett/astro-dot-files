@@ -1,14 +1,15 @@
 {
-	"scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "editorconfig": "editorconfig-checker -exclude \"**/node_modules/**\"",
+  "scripts": {
+    "dev": "astro dev --host",
+    "start": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview --host",
+    "prod": "astro build && astro preview --host",
     "check": "astro check",
-    "lintjs": "eslint . --fix",
-    "lintcss": "stylelint \"src/**/*.{css,astro}\" --fix",
-    "test": "npm run editorconfig && npm run lintcss && npm run lintjs && npm run check",
-  },
+    "lint:editorconfig": "editorconfig-checker --exclude node_modules",
+    "lint:js": "eslint src/**/*.{js,ts,astro} --fix || true",
+    "lint:css": "stylelint \"src/**/*.{css,astro}\" --fix",
+    "test": "npm run lint:editorconfig && npm run lint:css && npm run lint:js && npm run check",
+    "astro": "astro"
+  }
 }

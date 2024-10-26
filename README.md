@@ -19,7 +19,7 @@ Add packages to help make your developing project better:
 
 
 ```
-npm install --save-dev editorconfig-checker prettier prettier-plugin-astro eslint eslint-plugin-astro eslint-plugin-jsx-a11y @typescript-eslint/parser @typescript-eslint/eslint-plugin stylelint stylelint-config-html stylelint-config-standard postcss-html stylelint-order autoprefixer postcss-preset-env cssnano astro-compress
+npm install --save-dev editorconfig-checker prettier prettier-plugin-astro eslint eslint-plugin-astro eslint-plugin-jsx-a11y typescript-eslint @eslint/js @types/eslint__js @typescript-eslint/parser stylelint stylelint-config-html stylelint-config-standard postcss-html stylelint-order autoprefixer postcss-preset-env cssnano astro-compress
 ```
 
 ### STEP 3.
